@@ -1,0 +1,161 @@
+html {
+  font-size: 50%;
+}
+
+@media screen and (max-width: 1010px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    padding-top: 50px;
+  }
+
+  header > span {
+    font-size: 6rem;
+  }
+
+  .menu-section nav {
+    display: none;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d2872c;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 65px;
+    top: 55px;
+  }
+
+  .menu-section.on .menu-toggle .um {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .dois {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .tres {
+    transform: rotate(-45deg) translate(8px, -10px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul li a {
+    font-size: 6rem;
+    line-height: 10rem;
+    display: block;
+    color: #000;
+  }
+
+  .um,
+  .dois,
+  .tres {
+    background-color: #000;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-section.on nav ul li a:hover {
+    background-color: #925e1f;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 50px;
+    position: unset;
+  }
+
+  section {
+    padding: 0;
+    text-align: center;
+    z-index: unset;
+  }
+
+  section > h2 {
+    width: 100%;
+    font-size: 5rem;
+  }
+
+  section > button {
+    width: 100%;
+    font-size: 6rem;
+  }
+
+  figure {
+    position: unset;
+    z-index: unset;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (max-width: 607px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 25%;
+  }
+
+  section > h2 {
+    margin-bottom: 30px;
+  }
+
+  section > button {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  html {
+    font-size: 20%;
+  }
+}

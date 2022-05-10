@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #766f68;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px 0 50px;
+}
+
+header > span {
+  font-size: 4rem;
+  color: #d2872c;
+  font-weight: 600;
+}
+
+.menu-section > nav > ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-size: 3rem;
+  column-gap: 30px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.menu-section > nav > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  width: 100%;
+  padding-top: 120px;
+  position: relative;
+}
+
+section {
+  width: 60%;
+  z-index: 1;
+  padding-left: 85px;
+}
+
+section > h1 {
+  font-size: 8.8rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+section > h2 {
+  font-size: 3.8rem;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+section > button {
+  background-color: #d2872c;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 52%;
+  height: 100px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+section > button:hover {
+  background-color: #925e1f;
+}
+
+figure {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: 155px;
+  z-index: -1;
+}
+
+figure > img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+footer > small > a {
+  color: #d2872c;
+}
+
+@media only screen and (max-height: 1023px) {
+  body {
+    height: 100%;
+  }
+
+  header {
+    padding-top: 20px;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  footer {
+    margin-top: 70px;
+  }
+}
